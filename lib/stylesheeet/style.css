@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    background: rgb(217,201,201);
+background: linear-gradient(90deg, rgba(14, 12, 12, 0.72) 0%, rgb(23, 3, 70) 51%);
+}
+
+/* navbar styling */ 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+.nav-items ul {
+    display: flex;
+    list-style-type: none;
+    gap: 50px;
+}
+.nav-items ul li a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #fff;
+}
+.nav-logo a {
+    text-decoration: none;
+}
+.logo {
+    color: #fff;
+}
+.active {
+    color: #fd6303 !important;
+}
+/* hero section style */
+.hero-container {
+    display:flex;
+    justify-content: space-between;
+    padding: 50px 60px;
+}
+.intro h1 {
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-top: 30px;
+    }
+    .intro h5 {
+        color: #fde403;
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin-bottom: 40;
+    }
+    .summary {
+        color: #fff;
+        font-size: 1.2rem;
+        margin-bottom: 40px;
+        width: 70%;
+    }
+    .hero-btn{
+        display: flex;
+        gap: 50px;
+        margin-top: 80px;
+    }
+    .hire-btn,
+    .resume-btn {
+        text-decoration: none;
+        padding: 15px;
+        border-radius: 10px;
+        font-weight: 700;
+    }
+    .hire-btn{
+        background-color: #0069f3;
+        color: #030000;
+    }
+    .resume-btn{
+        border: 1px solid#0069f3;
+        color: #0069f3;
+    }
+    
+    /* services section styling*/
+    .services-container h2 {
+        text-align: center;
+        color: #fff;
+        font-weight: 600;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+    .top-service,
+    .bottom-service {
+        color: #fff;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 30px;
+        gap: 50px;
+        padding: 0px 50px;
+    }
+.card {
+    width: 100%;
+    height: 100%;
+    background-color: #07182e;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    place-content: center;
+    place-items: center;
+    border-radius: 20px;
+    padding: 200px 50px;
+}
+
+
+.card h1 {
+    font-size: 2rem;
+    z-index: 1;
+}
+.card::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    background: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+    height: 130%;
+    animation: animate 4s linear infinite;
+    transition: all 0.3s linear;
+}
+.card::after{
+    content: "";
+    position: absolute;
+    background-color: #07182e;
+    inset: 5px;
+    border-radius: 15px;
+}
+
+@keyframes animate {
+    from {
+    transform: rotate(0deg);
+}
+
+to {
+    transform: rotate(360deg);
+ }
+}
+/* contact section styling*/
+
+
+/* footer styling stars */
+footer{
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    padding: 20px 30px;
+    margin-top: 80px;
+    background-color: #07182e;
+}
+.fb-icon {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.contact-container {
+    justify-content: center;
+    margin-top: 80px;
+}
+.contact-text {
+    margin-bottom: 80px;
+    padding-left: 300px;
+    font-size: 40px;
+    text-align:center;
+    color: #fff;
+    box-shadow: 0px 0px 10px #020202;
+    text-shadow:0px 0px 10px #020202;
+}
+.contact-intro {
+    gap: 50px;
+    padding-left: 500px;
+}
+
+.contact-intro {
+    display: flex;
+    gap: 30px;
+}
+
+.contact-details {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 50px;
+    align-items: center;
+    color: black;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px #fff;
+}
+.contact-icon{
+    background-color: #380275;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.contact-address {
+    background-color: #380275;
+    color: #fff;
+    padding: 10px 13px;
+    border-radius: 8px;
+    
+}
+.contact-form{
+   
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+input[type=text], input[type=email], input[type=number] {
+    width: 300px;
+    padding: 20px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px #fff;
+}
+
+textarea {
+    width: 100%;
+    height: 180px; 
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px #fff;
+}
+
+input[type=submit] {
+    padding: 15px 20px;
+    float: right;
+    background-color: #380275;
+    color:#fff;
+    border-radius: 15px;
+}
+
+
